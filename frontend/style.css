@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; max-width: 700px; margin: 20px auto; padding: 0 12px; background: #f5f7fa; }
+h1 { text-align: center; }
+section { background: white; padding: 16px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+form { display: flex; flex-wrap: wrap; gap: 8px; }
+input { padding: 8px; flex: 1 1 140px; }
+button { padding: 8px 14px; background: #2563eb; color: white; border: 0; border-radius: 4px; cursor: pointer; }
+.card { border: 1px solid #ddd; border-radius: 6px; padding: 10px; margin-top: 10px; }
+.card button { margin-right: 6px; }

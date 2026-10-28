@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>College Carpool Matcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🚗 College Carpool Matcher</h1>
+
+  <section>
+    <h2>Offer a ride (Driver)</h2>
+    <form id="postForm">
+      <input id="p_name" placeholder="Your name" required>
+      <input id="p_email" type="email" placeholder="Your email" required>
+      <input id="p_origin" placeholder="From" required>
+      <input id="p_dest" placeholder="To" required>
+      <input id="p_time" type="datetime-local" required>
+      <input id="p_seats" type="number" min="1" max="8" placeholder="Seats available" required>
+      <button>Post ride</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Find a ride (Rider)</h2>
+    <form id="searchForm">
+      <input id="s_origin" placeholder="From">
+      <input id="s_dest" placeholder="To">
+      <input id="s_time" type="datetime-local">
+      <button>Search</button>
+    </form>
+    <div id="rides"></div>
+  </section>
+
+  <section>
+    <h2>My ride requests (Driver)</h2>
+    <form id="reqForm">
+      <input id="r_email" type="email" placeholder="Your driver email" required>
+      <button>Show requests</button>
+    </form>
+    <div id="requests"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
